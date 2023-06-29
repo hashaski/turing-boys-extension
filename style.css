@@ -25,11 +25,14 @@ form {
 }
 
 input[type="text"] {
-    width: 100%; /* replace with the width of your button */
+    width: 100%; 
+    text-align: start;
   }
 
-  .textbox {
+.textbox {
     height: 100px;
     width: 100%; /* replace with the width of your text box */
     margin-right: 10px; /* adjust as needed */
+    resize: none;
   }
+
