@@ -1,0 +1,22 @@
+form {
+    background-color: #f8f8f8;
+    width: 300px;
+    display: flex;
+    padding: 20px;
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #428d70;
+    color: white;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+.button:hover {
+    background-color: #499a7b;
+}
