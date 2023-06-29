@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Read & Comprehend",
+  "description": "An extension that captures text from a screenshot and gives access to AI21 AI to better help the user.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "img.png"
+  }
+}
