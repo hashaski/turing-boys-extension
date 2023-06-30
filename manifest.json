@@ -5,7 +5,7 @@
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "img.png"
+    "default_popup": "pages/index.html",
+    "default_icon": "SiteAssets/imgs/img.png"
   }
 }

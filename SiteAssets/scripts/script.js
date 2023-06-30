@@ -8,3 +8,4 @@ screenshotButton.addEventListener('click', () => {
     document.body.appendChild(img);
   });
 });
+
