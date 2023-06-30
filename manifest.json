@@ -6,6 +6,6 @@
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "pages/index.html",
-    "default_icon": "SiteAssets/imgs/img.png"
+    "default_icon": "pages/SiteAssets/imgs/img.png"
   }
 }

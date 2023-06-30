@@ -17,7 +17,7 @@
     align-items: center;
 
     .button {
-            width: 10rem;
+            width: 8rem;
             padding:10px 5px;
             border: none;
             border-radius: 5px;
@@ -46,9 +46,11 @@
     height: 100px;
     width: 100%;
     /* width: 100%; replace with the width of your text box */
-    
     margin-right: 10px; /* adjust as needed */
     resize: none;
-    
+  }
+
+  .textbox:disabled{
+    background-color: white;
   }
 
