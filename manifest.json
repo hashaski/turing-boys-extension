@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "InV",
+  "name": "InViewAI",
   "description": "An extension that captures text from a screenshot and gives access to AI21 AI to better help the user.",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
