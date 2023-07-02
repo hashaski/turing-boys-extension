@@ -7,7 +7,7 @@ const getAiResponse = async (prompt) => {
 
   const options = {
     headers: {
-      Authorization: API_KEY,
+      Authorization: "Bearer <API_key>",
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
