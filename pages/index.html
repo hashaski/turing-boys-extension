@@ -16,9 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="SiteAssets\scripts\script.js" type="application/javascript" integrity=""></script>
-    <script src="jquery-3.6.4.min.js" type="text/js"
-        integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD"></script>
+    <script src="SiteAssets\scripts\script.js" type="module" integrity=""></script>
 
     <title>InViewAI</title>
 </head>
@@ -65,14 +63,13 @@
 
             <div class="form-floating" style="width: 100%; margin-bottom: 10px; height: 200px;">
                 <textarea class="form-control textbox" placeholder="Write a text or simply take an Screenshot!" disabled
-                    id="floatingTextarea2" readonly style="height: 100%;"></textarea>
-                <label for="floatingTextarea2"></label>
+                    id="AIResponse" readonly style="height: 100%;"></textarea>
             </div>
 
             <div class="input-group mb-3" style="margin-top: 20px;">
                 <input type="text" class="form-control" placeholder="Ask your question here!"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg
+                    aria-label="Recipient's username" aria-describedby="button-addon2" id="prompt">
+                <button class="btn btn-outline-secondary" type="button" id="sendPrompt"><svg
                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send"
                         viewBox="0 0 16 16">
                         <path

@@ -1,3 +1,5 @@
+import getAiResponse from "./api.js";
+
 // const screenshotButton = document.getElementById('screenshot-button');
 
 // screenshotButton.addEventListener('click', () => {
@@ -9,23 +11,21 @@
 //   });
 // });
 
+const submitPrompt = async () => {
+  const prompt = document.getElementById("prompt").value;
+  const response = await getAiResponse(prompt);
+  document.getElementById("AIResponse").value = response;
+};
 
-const teste=()=>{
-  const teste = document.getElementById('teste');
-
-  teste.addEventListener('click',()=>{
-  console.log("aaaaaaaaa")
-  })
-
-}
-
+const submitHandler = () => {
+  const sendButton = document.getElementById("sendPrompt");
+  sendButton.addEventListener("click", async () => {
+    await submitPrompt();
+  });
+};
 
 const init = () => {
-  teste()
-}
+  submitHandler();
+};
 
-
-window.addEventListener('load',()=>{init()})
-
-
-  
+window.onload = init();
