@@ -4,6 +4,20 @@ require('dotenv').config({ path: '../../../.env'});
 
 const API_KEY = process.env.API_KEY;
 
+const makePrompt = (textTop, textBottom) => {
+  return textTop + '\n Considering the text above, answer the following question:\n' + textBottom;
+};
+
+
+//TODO: get text from placeholder or any other way
+function getTextByPlaceholder(textWithin) {
+  const elements = document.querySelectorAll('[placeholder="' + textWithin + '"]');
+  if (elements.length > 0) {
+    return elements[0].textContent;
+  }
+  return null;
+}
+
 const options = {
   headers: {
     "Authorization": API_KEY,
