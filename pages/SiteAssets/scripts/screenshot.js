@@ -1,14 +1,28 @@
-/* const screenshotButton = document.getElementById('screenshot-button');
 
-screenshotButton.addEventListener('click', () => {
-  html2canvas(document.body).then(canvas => {
-    const imgData = canvas.toDataURL('image/png');
-    const img = new Image();
-    img.src = imgData;
-    document.body.appendChild(img);
+ {
+  
+/* HTML PARA MANIPULAÇÃO
+
+<div id="select_area" class="select_area">
+<img id="full-image" src="x.png" alt="Full Image" class="select_area">
+<canvas id="canvas" ></canvas>
+<input type="hidden" id="thb_left">
+<input type="hidden" id="thb_top">
+<input type="hidden" id="thb_right">
+<input type="hidden" id="thb_bottom">
+<script src="script.js"></script></div> */}
+
+/* chrome.action.onClicked.addListener(async (tab) => {
+  await chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    function: () => {
+      const injectElement = document.createElement('div');
+      injectElement.className = 'select_area';
+      injectElement.innerHTML = 'hello world';
+      document.body.appendChild(injectElement);
+    },
   });
 }); */
-
 
 var image = document.getElementById('full-image');
 var canvas = document.getElementById('canvas')
@@ -73,7 +87,7 @@ function drawRectInCanvas()
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.beginPath();
   ctx.lineWidth = "6";
-  ctx.fillStyle = "rgba(199, 87, 231, 0.2)";
+  ctx.fillStyle = "rgba(199, 87, 231, 0)";
   ctx.strokeStyle = "#c757e7";
   ctx.rect(rect.left, rect.top, rect.width, rect.height);
   ctx.fill();
@@ -261,3 +275,6 @@ window.addEventListener('load',init)
 window.addEventListener('resize',repositionCanvas)
 
 //
+
+
+
