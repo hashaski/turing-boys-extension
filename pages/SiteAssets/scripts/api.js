@@ -1,17 +1,24 @@
 const getAiResponse = async (prompt) => {
   console.log("api.js loaded");
   let aiResponse = "";
+
+  const promptCima = document.getElementById("prompt-cima").value;
+  const promptBaixo = document.getElementById("prompt").value;
+
+  const promptFormated = promptCima + "\nConsidering the text above, answer the following question: " + promptBaixo;
+
+
   // require("dotenv").config({ path: "../../../.env" });
 
   // const API_KEY = process.env.API_KEY;
 
   const options = {
     headers: {
-      Authorization: "Bearer <API_key>",
+      Authorization: "Bearer <API_KEY>",
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      prompt: prompt,
+      prompt: promptFormated,
       numResults: 1,
       maxTokens: 200,
       temperature: 0.7,
