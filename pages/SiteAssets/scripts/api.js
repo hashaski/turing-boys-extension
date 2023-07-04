@@ -5,7 +5,7 @@ const getAiResponse = async (prompt) => {
   const promptCima = document.getElementById("prompt-cima").value;
   const promptBaixo = document.getElementById("prompt").value;
 
-  const promptFormated = promptCima + "\nConsidering the text above, answer the following question: " + promptBaixo;
+  const promptFormated = promptCima + "\n###\nConsidering the text above, answer the following question: " + promptBaixo;
 
 
   // require("dotenv").config({ path: "../../../.env" });
