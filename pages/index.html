@@ -22,10 +22,14 @@
 </head>
 
 <body style="height: 600px; width: 600px;">
-    <div class="img-preview"></div>
+    <div class="select-area"></div>
         <img id="captured-image" class="captured-image" style="display: none;">
-        <canvas id="canvas" class="canvas" style="display: none;"></canvas>
-        <button type="button" id="confirm-button" class="btn btn-primary button" style="display: none;">Confirm</button>
+        <canvas id="canvas" ></canvas>
+        <input type="hidden" id="thb_left">
+        <input type="hidden" id="thb_top">
+        <input type="hidden" id="thb_right">
+        <input type="hidden" id="thb_bottom">
+        <script src="turing-boys-extension-main\pages\SiteAssets\scripts\screenshot.js"></script>
     <form>
         <div class="principal">
             <h3>InViewAI</h3>
