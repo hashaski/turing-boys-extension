@@ -29,12 +29,16 @@
             margin-bottom: 10px;
     
         }
+        .button:active {
+            background-color:#51ac89;
+        }
 }
 
 
 .button:hover {
     background-color: #499a7b;
 }
+
 
 /* input[type="text"] {
     width: 100%; 
