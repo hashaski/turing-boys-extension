@@ -13,7 +13,7 @@ import getAiResponse from "./api.js";
 
 const AIResponse = document.getElementById("AIResponse");
 let undo = [];
-let redo;
+let redo = "";
 const sendButton = document.getElementById("sendPrompt");
 const spinner = document.getElementById("spinner");
 const sendImg = document.getElementById("sendImg");
