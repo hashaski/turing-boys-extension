@@ -26,6 +26,7 @@ const submitHandler = () => {
 
 const init = () => {
   submitHandler();
+  github();
 };
 
 function getSelected(info) {
@@ -33,11 +34,12 @@ function getSelected(info) {
   document.getElementById("prompt-cima").value = info.selectionText;
 }
 
-chrome.contextMenus.create({
-  title: "Explore: \"%s\"", 
-  contexts:["selection"], 
-  onclick: getSelected
-});
+const github = () => {
+  document.getElementById("logoImg").addEventListener("click", () => {
+  window.open("https://github.com/hashaski/turing-boys-extension", '_blank').focus();
+
+  })};
+
 
 var input = document.getElementById("prompt");
 
