@@ -3,9 +3,15 @@
   "name": "InViewAI",
   "description": "An extension that captures text from a screenshot and gives access to AI21 AI to better help the user.",
   "version": "1.0",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "contextMenus"],
   "action": {
     "default_popup": "pages/index.html",
-    "default_icon": "pages/SiteAssets/imgs/img.png"
+    "default_icon": "pages/SiteAssets/imgs/icon24.png"
+  },
+  "icons": {
+    "128": "pages/SiteAssets/imgs/icon128.png",
+    "32": "pages/SiteAssets/imgs/icon32.png",
+    "24": "pages/SiteAssets/imgs/icon24.png",
+    "16": "pages/SiteAssets/imgs/icon16.png"
   }
 }
