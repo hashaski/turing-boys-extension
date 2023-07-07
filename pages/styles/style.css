@@ -32,6 +32,27 @@
         .button:active {
             background-color:#51ac89;
         }
+    
+      .upload-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6px;
+        background-color: #428d70;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        width: 8rem;
+        padding: 10px 5px;
+        border-radius: 5px;
+      }
+      .upload-button:hover{
+        background-color: #4b977a;
+      }
+      .upload-button:active{
+        background-color: #51ac89;
+      }
+    
 }
 
 
@@ -78,6 +99,19 @@
   border-radius: 20px;
   border: 3px solid white;
 }
+
+.copy{
+  position: absolute;
+  top: 1.5rem;
+  left: 33.5rem;
+  opacity: 0.5;
+}
+.copy:hover{
+  cursor: pointer;
+  opacity:1;
+}
+
+
 
 #logoDiv:hover{
   cursor: pointer;
